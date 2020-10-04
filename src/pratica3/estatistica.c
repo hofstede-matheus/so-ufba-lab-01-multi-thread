@@ -90,7 +90,7 @@ vetorValores = (int *) malloc((argc-1) * sizeof(int));
   //criando threads
   pthread_create( &threads[0], NULL, medio, NULL );
   pthread_create( &threads[1], NULL, menor, NULL );
-  pthread_create( &threads[3], NULL, maior, NULL );
+  pthread_create( &threads[2], NULL, maior, NULL );
   //thread1 = pthread_create( &threads[0], NULL, menor, (void *)tid );
 
 
