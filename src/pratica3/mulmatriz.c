@@ -126,9 +126,9 @@ int main( int argc, char *argv[] ){
     mostrarMatriz(mat3);*/
   
   tempoExecucao1 = (tempoFinal.tv_sec - tempoInicio.tv_sec) * 1000.0; // de segundo para milisegundos
-  tempoExecucao2 = (tempoFinal.tv_usec - tempoInicio.tv_usec) / 1000.0; // de microsegundos para milisegundos e somando tempo total
+  tempoExecucao2 = (tempoFinal.tv_usec - tempoInicio.tv_usec) / 1000.0; // de microsegundos para milisegundos 
 
-  tempoExecucaoTotal = tempoExecucao1 + tempoExecucao2;
+  tempoExecucaoTotal = tempoExecucao1 + tempoExecucao2;// somando tempo total
   printf("Foram utilizadas %d threads na multiplicação da matriz 1000x1000, com %.3lf segundos de execução.\n", numThreads, tempoExecucaoTotal/1000.0);
 
   free(mat1);
