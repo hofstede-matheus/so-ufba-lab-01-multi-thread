@@ -1,7 +1,7 @@
 /*
   O programa deve ser executado desta maneira:
-    gcc mulmatriz.c -std=c99 -Wall -o mulmatriz -lm -lpthread
-    ./mulmatriz MatrizA MatrizB
+    gcc multmatriz.c -std=c99 -Wall -o mulmatriz -lm -lpthread
+    ./multmatriz MatrizA MatrizB
 */
 
 #include <stdio.h>
@@ -84,7 +84,7 @@ int main( int argc, char *argv[] ){
   pthread_t * threads;
 
   if (argc != 3) {
-    printf("O comando deve ser ./mulmatriz MatrizA MatrizB\n" );
+    printf("O comando deve ser ./multmatriz MatrizA MatrizB\n" );
     return -1;
   }
 
