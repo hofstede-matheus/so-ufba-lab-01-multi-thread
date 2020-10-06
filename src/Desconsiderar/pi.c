@@ -31,8 +31,8 @@ typedef struct {
 
 
 void* calculatePI(t_params * params) {
-	printf("position: %d\n", params->position);
-	printf("operator: %.5f\n", params->operator);
+	printf("posicao: %d\n", params->position);
+	printf("operador: %.5f\n", params->operator);
 	printf("calc: %.5f\n", params->operator*(4.0 / (3.0+2.0*params->position)));
 	params->resultRef[params->position] = params->operator*(4.0 / (3.0+2.0*params->position));
 	printf("this position ::%.8f::\n", params->resultRef[params->position]);
@@ -64,7 +64,7 @@ void* calculatePI(t_params * params) {
 
 int main(){
 	printf("Calculando número PI usando série de Leibniz\n");
-	printf("Este processo pode demorar um pouquinho, dependendo de sua CPU.\n");
+	printf("Este processo pode demorar, dependendo da capacidade de sua CPU. Aguarde um instante.\n");
 	printf("O número PI é gerado através de sucessivas somas e subtrações 900 milhões de vezes!\n");
 
 

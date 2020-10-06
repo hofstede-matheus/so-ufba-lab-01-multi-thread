@@ -5,14 +5,24 @@ define clean
     rm -f src/*.o
 endef
 
-pi: src/pi.c src/errors.o src/errors.h
+pi: src/calcpi.c
 	mkdir -p build
-	$(CC) $(CFLAGS) src/pi.c src/errors.o -o build/pi
+	$(CC) $(CFLAGS) src/calcpi.c -o build/pi
 	$(clean)
 
-matrix: src/matrix.c src/errors.o src/errors.h
+multmatriz: src/multmatriz.c 
 	mkdir -p build
-	$(CC) $(CFLAGS) src/matrix.c src/errors.o -o build/matrix
+	$(CC) $(CFLAGS) src/multmatriz.c -o build/multmatriz
+	$(clean)
+
+estatistica: src/estatistica.c 
+	mkdir -p build
+	$(CC) $(CFLAGS) src/estatistica.c -o build/estatistica
+	$(clean)
+
+primos: src/primos.c 
+	mkdir -p build
+	$(CC) $(CFLAGS) src/primos.c -o build/primos
 	$(clean)
 
 clean:

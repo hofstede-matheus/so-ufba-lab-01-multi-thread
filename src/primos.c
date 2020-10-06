@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
    pthread_t *threads;
    threads = (pthread_t *) malloc( numThreads * sizeof(pthread_t) );
 
-   printf("Esses são os numeros primos menores ou igual a %d:\n", atoi(argv[1]));
+   printf("Esses são os numeros primos menores ou iguais a %d:\n", atoi(argv[1]));
 
    pthread_create( &threads[0], NULL, ePrimo, argv[1] );
    pthread_join( threads[0], NULL );
