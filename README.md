@@ -15,4 +15,4 @@ make pi
 make multmatriz
 ```
 
-Os arquivos gerados estão na pasta build/ e podem ser executados através do comando ./<nomeDoPrograma>
+Os arquivos gerados estão na pasta build/ e podem ser executados através do comando ./nomeDoPrograma
